@@ -38,9 +38,18 @@ module.exports = {
           },
           { loader: 'image-webpack-loader', options: { bypassOnDebug: true } }
         ]
+      },
+      {
+        loader: "webpack-modernizr-loader",
+        test: /\.modernizrrc\.js$/
       }
     ]
   },
+  // resolve: {
+  //   alias: {
+  //     modernizr$: path.resolve(__dirname, ".modernizrrc.js")
+  //   }
+  // },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'stylesheets/bundle.css', allChunks: true })
   ]
