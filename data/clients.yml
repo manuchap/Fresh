@@ -1,0 +1,20 @@
+- "Sample 1":
+    logo: '/images/logos/clients/systek.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    website: "Facilis accusamus minima veritatis."
+
+- "Sample 2":
+    logo: '/images/logos/clients/tribe.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    website: "Veritatis natus praesentium nesciunt."
+
+- "Sample 3":
+    logo: '/images/logos/clients/kromo.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    website: "Asperiores sed optio itaque."
+
+- "Sample 4":
+    logo: '/images/logos/clients/infinite.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    website: "Unde et laborum numquam."
+
+- "Sample 5":
+    logo: '/images/logos/clients/gutwork.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    website: "Unde et laborum numquam."
+
