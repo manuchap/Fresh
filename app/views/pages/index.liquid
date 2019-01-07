@@ -1,10 +1,30 @@
 ---
 title: Home page
 published: true
+sections_content: >
+  {
+    "header": {
+      "settings": {
+        "logo": "/images/logos/fresh.svg"
+      },
+      "blocks": []
+    },
+    "hero": {
+      "settings": {
+        "title": "Manage, Deploy.",
+        "text": "Lorem ipsum sit dolor amet is a dummy text used by typography industry",
+        "button": "Get Started",
+        "link": "Get Started",
+        "image": "images/illustrations/worker.svg",
+        "clients": true
+      },
+      "blocks": []
+    }
+  }
 ---
 {% extends layouts/default %}
 {% block 'main' %}
-{% include 'hero' %}
+{% section 'hero' %}
 {% include 'section-one' %}
 {% include 'section-two' %}
 {% include 'section-three' %}

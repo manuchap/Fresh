@@ -1,0 +1,139 @@
+---
+{
+  "name": "Hero",
+  "class": "hero-main",
+  "icon": "image_text",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text"
+    },
+    {
+      "label": "Button",
+      "id": "button",
+      "type": "text",
+      "nb_rows": 1
+    },    {
+      "label": "Link",
+      "id": "link",
+      "type": "url"
+    },
+    {
+      "label": "Image",
+      "id": "image",
+      "type": "image_picker"
+    },
+    {
+      "label": "Show clients",
+      "id": "clients",
+      "type": "checkbox"
+    }
+  ],
+  "blocks": [],
+  "presets": []
+}
+---
+{% comment %}
+Above is the JSON definition of your section filled with random settings and blocks.
+The setting's type can be one of the following values : checkbox, image_picker, index, radio, rich_text, select, text, url.
+Modify it to match your needs.
+
+To use your section, 2 possibilites:
+
+1. within a dropzone
+
+Make sure that your layouts includes the following liquid tag:
+
+  {% sections_dropzone %}
+
+If you want to test this section in your Wagon site, add the following
+lines in the YAML section of any page including the {% sections_dropzone %}
+(or inheriting from a layout including it):
+
+sections_dropzone_content: >
+  [
+    {
+      "type": "hero",
+      "settings": {
+        "title": "My awesome section",
+      },
+      "blocks": [
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #1"
+          }
+        },
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #2"
+          }
+        },
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #3"
+          }
+        }
+      ]
+    }
+  ]
+
+2. as stand-alone section
+
+  {% section hero %}
+
+If you want to test this section in your Wagon site, add the following
+lines in the YAML section of the page including the statement above or complete it.
+
+sections_content: >
+  {
+    "hero": {
+      "settings": {
+        "title": "My awesome Hero section"
+      },
+      "blocks": [
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #1"
+          }
+        },
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #2"
+          }
+        },
+        {
+          "type": "list_item",
+          "settings": {
+            "title": "Item #3"
+          }
+        }
+      ]
+    }
+  }
+
+<div>
+  <h2>{{ section.settings.title }}</h2>
+  <ul>
+    {% for block in section.blocks %}
+    <li {{ block.locomotive_attributes }}>
+      {{ block.settings.title }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endcomment %}
+{% include 'hero' %}
