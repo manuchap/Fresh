@@ -1,19 +1,18 @@
 <section class="hero is-fullheight is-default is-bold">
-  {% include 'navbar' %}
-  {% include 'navbar-clone' %}
+  {% include 'header' %}
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered">
         <div class="column is-5 is-offset-1 landing-caption">
-          <h1 class="title is-1 is-bold is-spaced">{% editable_text "title", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</h1>
-          <h2 class="subtitle is-5 is-muted">{% editable_text "text", line_break: false, format: 'raw', rows: 5 %}{% endeditable_text %}</h2>
+          <h1 class="title is-1 is-bold is-spaced"> Manage, Deploy. </h1>
+          <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h2>
           <p>
-            <a class="button cta rounded primary-btn raised">{% editable_text "button", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</a>
+            <a class="button cta rounded primary-btn raised"> Get Started </a>
           </p>
         </div>
         <div class="column is-5 is-offset-1">
           <figure class="image is-4by3">
-            <img src="{% editable_file 'picture' %}{% endeditable_file %}" alt="Description">
+            <img src="{{ 'illustrations/worker.svg' | theme_image_url }}" alt="Description">
           </figure>
         </div>
       </div>
@@ -22,10 +21,12 @@
   <div class="hero-foot mb-20">
     <div class="container">
       <div class="tabs is-centered">
+        {% editable_model clients %}
         <ul>
           {% for client in contents.clients %}
           <li><a><img class="partner-logo" src="{{ client.logo.url }}"></a></li>
           {% endfor %}
+        {% endeditable_model %}
         </ul>
       </div>
     </div>

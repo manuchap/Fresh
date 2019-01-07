@@ -11,13 +11,14 @@ is_layout: false
     {% seo %}
     {{ 'bundle.css' | stylesheet_tag }}
     {{ 'bundle.js' | javascript_tag }}
+    {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
   </head>
-  {% include 'preloader' %}
   <body>
+    {% include 'preloader' %}
     {% block 'main' %}
     {% endblock %}
+    {% include 'footer' %}
+    {% include 'backtotop' %}
+    {% include 'sidebar' %}
   </body>
-  {% include 'footer' %}
-  {% include 'backtotop' %}
-  {% include 'sidebar' %}
 </html>
