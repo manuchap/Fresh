@@ -5,7 +5,7 @@ sections_content: >
   {
     "header": {
       "settings": {
-        "logo": "/images/logos/fresh.svg"
+        "image": "images/logos/fresh.svg"
       },
       "blocks": []
     },
@@ -19,13 +19,55 @@ sections_content: >
         "clients": true
       },
       "blocks": []
+    },
+    "section_one": {
+      "settings": {
+        "title": "Great Power Comes",
+        "text": "With great Responsability"
+      },
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "ctitle": "App builder",
+            "cicon": "images/illustrations/icons/mouse-globe.svg",
+            "ctext": "This is some explanatory text that is on two rows",
+            "cbtype": "accent-btn",
+            "cbtext": "Free trial",
+            "cblink": "#"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "ctitle": "Cloud integration",
+            "cicon": "images/illustrations/icons/laptop-cloud.svg",
+            "ctext": "This is some explanatory text that is on two rows",
+            "cbtype": "secondary-btn",
+            "cbtext": "Get Started",
+            "cblink": "#"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "ctitle": "Addons & Plugins",
+            "cicon": "images/illustrations/icons/plug-cloud.svg",
+            "ctext": "This is some explanatory text that is on two rows",
+            "cbtype": "primary-btn",
+            "cbtext": "Get Started",
+            "cblink": "#"
+          }
+        }
+      ]
     }
   }
 ---
 {% extends layouts/default %}
 {% block 'main' %}
+{% section 'header', placement: 'top' %}
 {% section 'hero' %}
-{% include 'section-one' %}
+{% section 'section_one' %}
 {% include 'section-two' %}
 {% include 'section-three' %}
 {% include 'section-four' %}
