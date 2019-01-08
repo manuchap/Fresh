@@ -1,0 +1,48 @@
+---
+{
+  "name": "Section two",
+  "class": "two-main",
+  "icon": "list",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 2
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "nb_rows": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "List",
+      "type": "list",
+      "settings": [
+        {
+          "label": "List icon",
+          "id": "licon",
+          "type": "image_picker"
+        },
+        {
+          "label": "List title",
+          "id": "ltitle",
+          "type": "text"
+        },
+        {
+          "label": "List text",
+          "id": "ltext",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+---
+{% include 'section-two' %}

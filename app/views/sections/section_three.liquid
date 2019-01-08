@@ -1,11 +1,16 @@
 ---
 {
-  "name": "Hero",
-  "class": "hero-main",
-  "icon": "image_text",
+  "name": "Section three",
+  "class": "three-main",
+  "icon": "default",
   "keep_icon": true,
   "keep_label": true,
   "settings": [
+    {
+      "label": "Image",
+      "id": "image",
+      "type": "image_picker"
+    },
     {
       "label": "Title",
       "id": "title",
@@ -13,34 +18,25 @@
       "nb_rows": 1
     },
     {
-      "label": "Text",
-      "id": "text",
+      "label": "Subtitle",
+      "id": "subtitle",
       "type": "text",
-      "nb_rows": 2
+      "nb_rows": 1
     },
     {
       "label": "Button",
       "id": "button",
       "type": "text",
       "nb_rows": 1
-    },    {
+    },
+    {
       "label": "Link",
       "id": "link",
       "type": "url"
-    },
-    {
-      "label": "Image",
-      "id": "image",
-      "type": "image_picker"
-    },
-    {
-      "label": "Show clients",
-      "id": "clients",
-      "type": "checkbox"
     }
   ],
   "blocks": [],
   "presets": []
 }
 ---
-{% include 'hero' %}
+{% include 'section-three' %}

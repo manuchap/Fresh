@@ -14,7 +14,7 @@ sections_content: >
         "title": "Manage, Deploy.",
         "text": "Lorem ipsum sit dolor amet is a dummy text used by typography industry",
         "button": "Get Started",
-        "link": "Get Started",
+        "link": "#",
         "image": "images/illustrations/worker.svg",
         "clients": true
       },
@@ -60,6 +60,48 @@ sections_content: >
           }
         }
       ]
+    },
+    "section_two": {
+      "settings": {
+        "title": "You're here because you want the best",
+        "text": "And we Know it"
+      },
+      "blocks": [
+        {
+          "type": "list",
+          "settings": {
+            "licon": "images/illustrations/icons/laptop-globe.svg",
+            "ltitle": "Powerful and unified interface",
+            "ltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor."
+          }
+        },
+        {
+          "type": "list",
+          "settings": {
+            "licon": "images/illustrations/icons/doc-sync.svg",
+            "ltitle": "Cross device Synchronisation",
+            "ltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor."
+          }
+        },
+        {
+          "type": "list",
+          "settings": {
+            "licon": "images/illustrations/icons/mobile-feed.svg",
+            "ltitle": "Nomad System",
+            "ltext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor."
+          }
+        }
+      ]
+    },
+    "section_three": {
+      "settings": {
+        "image": "images/illustrations/mockups/app-mockup.png",
+        "title": "One Platform",
+        "subtitle": "To rule them All",
+        "button": "Get Started",
+        "link": "#"
+      },
+      "blocks": []
     }
   }
 ---
@@ -68,8 +110,8 @@ sections_content: >
 {% section 'header', placement: 'top' %}
 {% section 'hero' %}
 {% section 'section_one' %}
-{% include 'section-two' %}
-{% include 'section-three' %}
+{% section 'section_two' %}
+{% section 'section_three' %}
 {% include 'section-four' %}
 {% include 'section-five' %}
 {% include 'modal' %}
