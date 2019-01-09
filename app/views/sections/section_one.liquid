@@ -61,4 +61,34 @@
   "presets": []
 }
 ---
-{% include 'section-one' %}
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ section.settings.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ section.settings.text }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+        {% for block in section.blocks %}
+        <div class="column">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-{{ forloop.index }}" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>{{ block.settings.ctitle }}</h4>
+            </div>
+            <div class="card-icon">
+              <img src="{{ block.settings.cicon }}">
+            </div>
+            <div class="card-text">
+              <p>{{ block.settings.ctext }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ block.settings.cblink }}" class="button btn-align-md {{ block.settings.cbtype }} raised">{{ block.settings.cbtext }}</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
