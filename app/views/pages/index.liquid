@@ -102,6 +102,41 @@ sections_content: >
         "link": "#"
       },
       "blocks": []
+    },
+    "section_four": {
+      "settings": {
+        "title": "Our Clients love us !",
+        "subtitle": "Lorem ipsum sit dolor amet is a dummy text used by typography industry"
+      },
+      "blocks": [
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.",
+            "qpict": "images/illustrations/faces/1.png",
+            "qauth": "Irma Walters",
+            "authj": "Accountant"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.",
+            "qpict": "images/illustrations/faces/2.png",
+            "qauth": "John Bradley",
+            "authj": "Financial Analyst"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.",
+            "qpict": "images/illustrations/faces/3.png",
+            "qauth": "Gary Blackman",
+            "authj": "HR Manager"
+          }
+        }
+      ]
     }
   }
 ---
@@ -112,7 +147,7 @@ sections_content: >
 {% section 'section_one' %}
 {% section 'section_two' %}
 {% section 'section_three' %}
-{% include 'section-four' %}
+{% section 'section_four' %}
 {% include 'section-five' %}
 {% include 'modal' %}
 {% endblock %}
