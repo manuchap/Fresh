@@ -11,12 +11,12 @@ sections_content: >
     },
     "hero": {
       "settings": {
-        "title": "Manage, Deploy.",
-        "text": "Lorem ipsum sit dolor amet is a dummy text used by typography industry",
-        "button": "Get Started",
-        "link": "#",
-        "image": "/samples/illustrations/worker.svg",
-        "clients": true
+        "hero-title": "Manage, Deploy.",
+        "hero-text": "Lorem ipsum sit dolor amet is a dummy_txt used by typography industry",
+        "hero-button": "Get Started",
+        "hero-link": "#",
+        "hero-image": "/samples/illustrations/worker.svg",
+        "hero-clients": true
       },
       "blocks": []
     },
@@ -31,7 +31,7 @@ sections_content: >
           "settings": {
             "ctitle": "App builder",
             "cicon": "/samples/illustrations/icons/mouse-globe.svg",
-            "ctext": "This is some explanatory text that is on two rows",
+            "ctext": "This is some explanatory_txt that is on_2 rows",
             "cbtype": "accent-btn",
             "cbtext": "Free trial",
             "cblink": "#"
@@ -42,7 +42,7 @@ sections_content: >
           "settings": {
             "ctitle": "Cloud integration",
             "cicon": "/samples/illustrations/icons/laptop-cloud.svg",
-            "ctext": "This is some explanatory text that is on two rows",
+            "ctext": "This is some explanatory_txt that is on_2 rows",
             "cbtype": "secondary-btn",
             "cbtext": "Get Started",
             "cblink": "#"
@@ -53,7 +53,7 @@ sections_content: >
           "settings": {
             "ctitle": "Addons & Plugins",
             "cicon": "/samples/illustrations/icons/plug-cloud.svg",
-            "ctext": "This is some explanatory text that is on two rows",
+            "ctext": "This is some explanatory_txt that is on_2 rows",
             "cbtype": "primary-btn",
             "cbtext": "Get Started",
             "cblink": "#"
@@ -106,7 +106,7 @@ sections_content: >
     "section_four": {
       "settings": {
         "title": "Our Clients love us !",
-        "subtitle": "Lorem ipsum sit dolor amet is a dummy text used by typography industry"
+        "subtitle": "Lorem ipsum sit dolor amet is a dummy_txt used by typography industry"
       },
       "blocks": [
         {
@@ -137,6 +137,59 @@ sections_content: >
           }
         }
       ]
+    },
+    "footer": {
+      "settings": {
+        "site_logo": "/samples/logos/fresh-white-alt.svg",
+        "social": true,
+        "social_title": "Follow us",
+        "praise": true,
+        "praise_logo": "/samples/logos/made-with-bulma.png"
+      },
+      "blocks": [
+        {
+          "type": "columns",
+          "settings": {
+            "title": "Product",
+            "link_1": "#",
+            "link_1_txt": "Discover features",
+            "link_2": "#",
+            "link_2_txt": "Compare features",
+            "link_3": "#",
+            "link_3_txt": "Our Roadmap",
+            "link_4": "#",
+            "link_4_txt": "Request features"
+          }
+        },
+        {
+          "type": "columns",
+          "settings": {
+            "title": "Docs",
+            "link_1": "#",
+            "link_1_txt": "Get Started",
+            "link_2": "#",
+            "link_2_txt": "User guides",
+            "link_3": "#",
+            "link_3_txt": "Admin guide",
+            "link_4": "#",
+            "link_4_txt": "Developers"
+          }
+        },
+        {
+          "type": "columns",
+          "settings": {
+            "title": "Blogroll",
+            "link_1": "#",
+            "link_1_txt": "Latest News",
+            "link_2": "#",
+            "link_2_txt": "Tech articles",
+            "link_3": "#",
+            "link_3_txt": "Video Blog",
+            "link_4": "#",
+            "link_4_txt": "Archives"
+          }
+        }
+      ]
     }
   }
 ---
@@ -149,5 +202,4 @@ sections_content: >
 {% section 'section_three' %}
 {% section 'section_four' %}
 {% include 'section-five' %}
-{% include 'modal' %}
 {% endblock %}
