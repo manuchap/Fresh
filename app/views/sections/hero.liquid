@@ -64,9 +64,9 @@
     <div class="container">
       <div class="tabs is-centered">
         <ul>
-          {% if section.settings.clients == "true" %}
+          {% if section.settings.clients == true %}
           {% for client in contents.clients %}
-          <li><a><img class="partner-logo" src="{{ client.logo.url }}"></a></li>
+          <li><a href="{{ client.website }}"><img class="partner-logo" src="{{ client.logo.url }}"></a></li>
           {% endfor %}
           {% endif %}
         </ul>
