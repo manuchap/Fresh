@@ -1,20 +1,15 @@
 - "Systek":
-    logo: '/samples/logos/clients/systek.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    logo: '/samples/logos/clients/systek.svg'
     website: "Facilis accusamus minima veritatis."
-
 - "Tribe":
-    logo: '/samples/logos/clients/tribe.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    logo: '/samples/logos/clients/tribe.svg'
     website: "Veritatis natus praesentium nesciunt."
-
 - "Kromo":
-    logo: '/samples/logos/clients/kromo.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    logo: '/samples/logos/clients/kromo.svg'
     website: "Asperiores sed optio itaque."
-
 - "Infinite":
-    logo: '/samples/logos/clients/infinite.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    logo: '/samples/logos/clients/infinite.svg'
     website: "Unde et laborum numquam."
-
 - "Gutwork":
-    logo: '/samples/logos/clients/gutwork.svg' # Path to a file in the public/samples folder or to a remote and external file.
+    logo: '/samples/logos/clients/gutwork.svg'
     website: "Unde et laborum numquam."
-
