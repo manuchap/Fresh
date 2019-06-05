@@ -1,6 +1,6 @@
 ---
 title: Default layout
-is_layout: false
+is_layout: true
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,6 @@ is_layout: false
     {% seo %}
     {{ 'bundle.css' | stylesheet_tag }}
     {{ 'bundle.js' | javascript_tag }}
-    {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
   </head>
   <body>
     {% include 'preloader' %}
@@ -21,5 +20,6 @@ is_layout: false
     {% section 'footer', placement: 'bottom' %}
     {% include 'backtotop' %}
     {% include 'sidebar' %}
+    {% if wagon %}<script src="http://localhost:35729/livereload.js"></script>{% endif %}
   </body>
 </html>
